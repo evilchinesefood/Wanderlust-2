@@ -1,50 +1,52 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* Fonts
+-------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
-body { line-height: 1 }
-ol, ul { list-style: none }
-blockquote, q { quotes: none }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-table { border-collapse: collapse; border-spacing: 0; }
-
-/* ============================== FONTS ============================== */	
-@font-face {
-	font-family: 'GraphicPixel';
-	src: url('../fonts/graphicpixel-webfont.eot');
-	src: url('../fonts/graphicpixel-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/graphicpixel-webfont.woff') format('woff'),
-		 url('../fonts/graphicpixel-webfont.ttf') format('truetype'),
-		 url('../fonts/graphicpixel-webfont.svg#GraphicPixelRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	@font-face {
-	font-family: 'GraphicPixel';
-	src: url('../fonts/graphicpixel-webfont.svg#GraphicPixelRegular') format('svg');
-	
-	}
-}
-
-/* ============================== BODY ============================== */
+/* Body
+-------------------------------------------------- */
 body {background:-moz-radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 125%), url('../img/ui/wood2.png') no-repeat 1587px 138px, url('../img/ui/wood2.png') no-repeat 51px 519px, url('../img/ui/wood3.png') no-repeat 228px 219px, url('../img/ui/wood.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px;}
-body {background:-webkit-gradient(radial, center center, 360, center center, 1200, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/ui/wood2.png') no-repeat 1587px 138px, url('../img/ui/wood2.png') no-repeat 51px 519px, url('../img/ui/wood3.png') no-repeat 228px 219px, url('../img/ui/wood.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px; font-family: 'GraphicPixel';}
+body {background:-webkit-gradient(radial, center center, 360, center center, 1200, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('../img/ui/wood2.png') no-repeat 1587px 138px, url('../img/ui/wood2.png') no-repeat 51px 519px, url('../img/ui/wood3.png') no-repeat 228px 219px, url('../img/ui/wood.png') repeat, #000; background-size:auto, 15px auto, 15px auto, 60px auto, 384px; font-family: 'Ubuntu Condensed', sans-serif; }
 
 #parchment { background: url('../img/ui/parchment.png') no-repeat; width: 1265px; height: 546px; position: absolute; left: 50%; margin-left: -632px; margin-top: 100px; z-index: -5; }
 #border { background: url('../img/ui/border.png') no-repeat; width: 980px; height: 500px; position: absolute; left: 50%; margin-left: -490px; margin-top: 115px; z-index: -5; }
-     
+
 #wrapper { width: 100%; height: 100%; }
-#wrapper-inner { width: 1000px; margin: 0 auto 0 auto; height: 700px; }
+#wrapper-inner { width: 100%; max-width: 1000px; margin: 0 auto 0 auto; height: 700px; }
 
-h2 { color: #333333; font-size: 18px; font-weight: bold; }
+/* Pop Buttons */
+.btnpop { background-color: #FFFFFF; color: #333333; padding: 7px 15px; position: relative; text-align: center; text-decoration: none; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -moz-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -webkit-transition: all .1s ease; -moz-transition: all .1s ease; -ms-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.btnpop:hover, .btnpop:focus { background-color: #E6E6E6; color: #333333 !important; text-decoration: none !important; -webkit-box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); -moz-box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); }
+.btnpop:active { color: #333333; position: relative; top: 6px; -webkit-box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); -moz-box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); }
 
-/* ============================== FRONT PAGE ============================== */
-.logo { margin-top: 200px; left: 50%; margin-left: 202px; }
+.btnpop-primary { background-color: #337AB7; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #2E6DA4; -moz-box-shadow: 0px 9px 0px #2E6DA4; box-shadow: 0px 9px 0px #2E6DA4; }
+.btnpop-primary:hover, .btnpop-primary:focus { background-color: #286090; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #204D74; -moz-box-shadow: 0px 9px 0px #204D74; box-shadow: 0px 9px 0px #204D74; }
+.btnpop-primary:active { color: #FFFFFF; -webkit-box-shadow: 0px 3px 0px #204D74; -moz-box-shadow: 0px 3px 0px #204D74; box-shadow: 0px 3px 0px #204D74; }
+
+.btnpop-succcess { background-color: #5CB85C; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #4CAE4C; -moz-box-shadow: 0px 9px 0px #4CAE4C; box-shadow: 0px 9px 0px #4CAE4C; }
+.btnpop-succcess:hover, .btnpop-succcess:focus { background-color: #449D44; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #398439; -moz-box-shadow: 0px 9px 0px #398439; box-shadow: 0px 9px 0px #398439; }
+.btnpop-succcess:active { -webkit-box-shadow: 0px 3px 0px #398439; color: #FFFFFF; -moz-box-shadow: 0px 3px 0px #398439; box-shadow: 0px 3px 0px #398439; }
+
+.btnpop-info { background-color: #5BC0DE; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #46B8DA; -moz-box-shadow: 0px 9px 0px #46B8DA; box-shadow: 0px 9px 0px #46B8DA; }
+.btnpop-info:hover, .btnpop-info:focus { background-color: #31B0D5; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #269ABC; -moz-box-shadow: 0px 9px 0px #269ABC; box-shadow: 0px 9px 0px #269ABC; }
+.btnpop-info:active { -webkit-box-shadow: 0px 3px 0px #269ABC; color: #FFFFFF; -moz-box-shadow: 0px 3px 0px #269ABC; box-shadow: 0px 3px 0px #269ABC; }
+
+.btnpop-warning { background-color: #F0AD4E; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #EEA236; -moz-box-shadow: 0px 9px 0px #EEA236; box-shadow: 0px 9px 0px #EEA236; }
+.btnpop-warning:hover, .btnpop-warning:focus { background-color: #EC971F; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #D58512; -moz-box-shadow: 0px 9px 0px #D58512; box-shadow: 0px 9px 0px #D58512; }
+.btnpop-warning:active { color: #FFFFFF; -webkit-box-shadow: 0px 3px 0px #D58512; -moz-box-shadow: 0px 3px 0px #D58512; box-shadow: 0px 3px 0px #D58512; }
+
+.btnpop-danger { background-color: #D9534F; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #D43F3A; -moz-box-shadow: 0px 9px 0px #D43F3A; box-shadow: 0px 9px 0px #D43F3A; }
+.btnpop-danger:hover, .btnpop-danger:focus { background-color: #C9302C; color: #FFFFFF; -webkit-box-shadow: 0px 9px 0px #AC2925; -moz-box-shadow: 0px 9px 0px #AC2925; box-shadow: 0px 9px 0px #AC2925; }
+.btnpop-danger:active { color: #FFFFFF; -webkit-box-shadow: 0px 3px 0px #AC2925; -moz-box-shadow: 0px 3px 0px #AC2925; box-shadow: 0px 3px 0px #AC2925; }
+
+/* Front Page
+-------------------------------------------------- */
+.logo { position: fixed; top: 30%; left: 50%; margin-top: -100px; margin-left: -280px; max-width: 500px; z-index: 1; }
 .logo-side { float: left; margin-top: 70px; }
 .nav { margin: 15px; margin-top: 30px; margin-bottom: 30px; font-size: 18px; text-align: center; }
 
 .version { position: relative; top: 15px; left: 125px; float: right; color: #FFFFFF; text-align: center; opacity:0.5; filter:alpha(opacity=5); }
+
+#btn-start { display: block; margin: 250px auto 0 auto; width: 300px; }
 
 .footer { position: relative; margin: 0px auto; color: #FFFFFF; text-align: center; }
 .footer a { color: #FFFFFF; text-decoration: underline; }
@@ -52,26 +54,39 @@ h2 { color: #333333; font-size: 18px; font-weight: bold; }
 
 .alert, .alert-success, .alert-error { opacity: 0.75; filter: alpha(opacity=75); margin-top: 15px; margin-bottom: 5px; }
 
-/* ============================== SKILLS ============================== */
-.modal { background: url('../img/ui/overlay-modal.png') no-repeat; border: hidden; box-shadow: none; -webkit-box-shadow: none; }
-.modal #name { opacity:0.5; filter:alpha(opacity=50); }
-.modal #name:focus { opacity:1; filter:alpha(opacity=100); }
-.modal-header, .modal-body, .modal-footer { background-color: transparent; border-top: hidden; border-bottom: hidden; box-shadow: none; }
-.modal-body { padding-left: 25px; }
-.modal-footer { margin-top: -20px; margin-right: 10px; }
-#myModalLabel { font-size: 22px; font-weight: bold; padding-top: 20px; }
-#points { margin-left: -3px; padding: 2px; padding-left: 3px; border: #00B91A medium solid; border-radius: 5px; }
-#start { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
-#STR, #INT, #STA, #AGI { cursor: default; margin-left: 18px; } 
-.skill-background { background-color: #FFFFFF; border-radius: 3px; padding: 10px; }
-.skill-table { margin-left: 10px; }
-.skill-level { background-color: #D2BA2F; border-radius: 3px; }
-.skill-star1 { margin-left: 7px; margin-top: 5px; margin-bottom: 10px; }
-.skill-star2 { margin-left: 8px; margin-top: 5px; }
-#value1, #value2, #value3, #value4 { margin-left: -1px; padding: 15px; background: url('../img/ui/coin.png') no-repeat; background-size: 40px 43px; background-position: 3px 1px; border: hidden; }
-.ptitle { cursor: default; }
-.statsBar { margin-top: 25px; margin-left: 1px; }
+@media (max-width:767px) {
+	.logo { width: 380px; top: 0; margin-top: 250px; margin-left: -185px; }
+}
 
-/* ============================== BOARD ============================== */
+/* Skills
+-------------------------------------------------- */
+.modal-content { background: url('../img/ui/overlay-modal.png') no-repeat; background-size: 100% 100%; border: hidden; box-shadow: none; -webkit-box-shadow: none; }
+.modal-header, .modal-body, .modal-footer { background-color: transparent; border-top: hidden; border-bottom: hidden; box-shadow: none; }
+.modal-header { paddin-top: 15px; font-size: 22px; }
+.modal-body { padding-left: 35px; padding-bottom: 50px; }
+.modal-body .well { width: 40px; }
+.modal-footer { margin-top: -30px; margin-right: 15px; padding-bottom: 25px; }
+.modal-spacing { margin-top: 0px; }
+#modal-title { font-size: 22px; font-weight: bold; padding-top: 20px; }
+
+#name { margin-bottom: 15px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; width: 97%; opacity:0.5; filter:alpha(opacity=50); }
+#name:focus { opacity:1; filter:alpha(opacity=100); }
+#points { margin-left: 10px; padding: 3px; border: #00B91A medium solid; border-radius: 5px; }
+#start { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+#STR, #INT, #STA, #AGI { cursor: default; display: block; margin-left: 9px; }
+.btn-up { margin-bottom: -15px; width: 40px; }
+.btn-down { margin-top: -58px; width: 40px; }
+.skill-background { background-color: #FFFFFF; border-radius: 3px; padding: 10px; }
+.skill-table { margin-left: -10px; }
+.skill-level { background-color: #337AB7; border-radius: 3px; }
+#value1, #value2, #value3, #value4 { margin-left: -1px; padding: 15px; background: url('../img/ui/coin.png') no-repeat; background-size: 40px 43px; background-position: 1px 1px; border: hidden; }
+
+@media (max-width:767px) {
+	.modal-body { padding-left: 25px; }
+	.modal-spacing { margin-top: 20px; }
+}
+
+/* Game Board
+-------------------------------------------------- */
 #map { position: absolute; top: 125px; margin-left: 40px; }
 .maprow { margin-bottom: -3px; }

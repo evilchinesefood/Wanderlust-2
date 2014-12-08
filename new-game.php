@@ -6,24 +6,24 @@
 <div id="parchment"></div>
 <div id="wrapper">
 	<div id="wrapper-inner">
-		<p class="version"><?php require_once('inc/version.inc'); ?></p>    
-    
+		<p class="version"><?php require_once('inc/version.inc'); ?></p>
+
 		<a href="http://www.development.johndayers.com/wanderlust2/"><img src="http://www.development.johndayers.com/wanderlust2/img/logos/small-logo.png" alt="Wanderlust 2" class="logo-side"></a>
-        
+
         <div class="clearfix"></div><br />
-        
+
         <?php require_once('php/inc_newgame.php'); ?>
-        
+
         <?php
 			echo '<div class="alert alert-success"><strong>Success! </strong>';
 				echo 'Your Character has been created and now is ready to start adventuring!';
 			echo '</div>';
 		?>
-        
+
         <br />
-        
+
         <div class="row">
-            <div class="span3" style="margin-top: -3px;">
+            <div class="col-md-3" style="margin-top: -3px;">
                 <h2 class="ptitle" title="Your characters name"><?php echo $name;?>, <?php if ($str > $int && $str > $sta && $str > $agi) { echo "the Brute"; } else if ($int > $str && $int > $sta && $int > $agi) { echo "the Mage"; } else if ($sta > $str && $sta > $int && $sta > $agi) { echo "the Tank"; } else if ($agi > $str && $agi > $int && $agi > $sta) { echo "the Rogue"; } else { echo "the Adventurer"; } ?></h2><br />
 
                 <p class="ptitle" title="Your characters current level">Level: <strong style="font-weight: bold"><?php echo $level;?></strong></p><br />
@@ -38,9 +38,9 @@
                 <p class="ptitle" title="How many moves your character has taken">Steps: <strong style="font-weight: bold"><?php echo $steps;?></strong></p><br />
                 <p class="ptitle" title="How many monsters you have killed">Kills: <strong style="font-weight: bold"><?php echo $kills;?></strong></p><br />
             </div>
-            <div class="span4">
+            <div class="col-md-4">
                 <div class="row">
-                    <div class="span1">
+                    <div class="col-md-1">
                         <span id="STR" title="Strength (Melee Damage)"><strong>STR</strong></span>
                         <div class="skill-background">
                             <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
@@ -60,7 +60,7 @@
                         	<span id="value1" style="font-weight: bold;"><?php if ( $str <= 9 ) { echo '0' . $str; } else { echo $str; }?></span>
                         </div>
                     </div>
-                    <div class="span1">
+                    <div class="col-md-1">
                         <span id="INT" title="Intelect (Magic Damage)">INT</span>
                         <div class="skill-background">
                             <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
@@ -80,7 +80,7 @@
                         	<span id="value2" style="font-weight: bold;"><?php if ( $int <= 9 ) { echo '0' . $int; } else { echo $int; }?></span>
                         </div>
                     </div>
-                    <div class="span1">
+                    <div class="col-md-1">
                         <span id="STA" title="Stamina (Health & Health Regen)">STA</span>
                         <div class="skill-background">
                             <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
@@ -100,7 +100,7 @@
                         	<span id="value3" style="font-weight: bold;"><?php if ( $sta <= 9 ) { echo '0' . $sta; } else { echo $sta; }?></span>
                         </div>
                     </div>
-                    <div class="span1">
+                    <div class="col-md-1">
                         <span id="AGI" title="Agility (Number of Moves per turn)">AGI</span>
                         <div class="skill-background">
                             <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
@@ -121,18 +121,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <br /><br />
-                
+
             </div>
         </div>
-        
+
         <div class="row">
-        	<div class="span12 pagination-centered" style="margin-top:-20px;">
-            	<a href="http://www.development.johndayers.com/wanderlust2/game.php" class="btn btn-success btn-large"><i class="icon-white icon-heart"></i> Start Adventure</a>
+        	<div class="col-md-12 pagination-centered" style="margin-top:-20px;">
+            	<a href="http://www.development.johndayers.com/wanderlust2/game.php" class="btn btn-success btn-lg"><i class="fa fa-heart"></i> Start Adventure</a>
             </div>
         </div>
-        
+
 	</div>
 </div>
 
@@ -142,28 +142,24 @@
 	var int = <?php echo $int;?>;
 	var sta = <?php echo $sta;?>;
 	var agi = <?php echo $agi;?>;
-	
-	while ( str >= 1 )
-	{
+
+	while (str >= 1) {
 		$("#1_"+str).addClass("skill-level");
 		str -= 1;
 	}
-	while ( int >= 1 )
-	{
+	while (int >= 1) {
 		$("#2_"+int).addClass("skill-level");
 		int -= 1;
 	}
-	while ( sta >= 1 )
-	{
+	while (sta >= 1) {
 		$("#3_"+sta).addClass("skill-level");
 		sta -= 1;
 	}
-	while ( agi >= 1 )
-	{
+	while (agi >= 1){
 		$("#4_"+agi).addClass("skill-level");
 		agi -= 1;
 	}
-	
+
 	$(document).ready(function () {
 		$("#STR").tooltip({
 			'selector': '',
