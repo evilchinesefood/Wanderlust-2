@@ -8,8 +8,6 @@
 <div id="wrapper">
 	<div id="wrapper-inner">
 		<p class="version"><?php require_once('inc/version.inc'); ?></p>
-
-		<a href="/wanderlust2/"><img src="img/logos/small-logo.png" alt="Wanderlust 2" class="logo-side"></a>
         <div id="map">
         	<?php require_once('php/map_functions.php'); ?>
         </div>
