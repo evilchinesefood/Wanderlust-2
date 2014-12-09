@@ -1,5 +1,5 @@
 <?php require_once('inc/header.inc'); ?>
-<?php require_once('php/inc_errors.php'); ?>
+<?php require_once('php/errors_functions.php'); ?>
 
 <body>
 
@@ -8,11 +8,11 @@
 	<div id="wrapper-inner">
 		<p class="version"><?php require_once('inc/version.inc'); ?></p>
 
-		<a href="http://www.development.johndayers.com/wanderlust2/"><img src="http://www.development.johndayers.com/wanderlust2/img/logos/small-logo.png" alt="Wanderlust 2" class="logo-side"></a>
+		<a href="/wanderlust2/"><img src="img/logos/small-logo.png" alt="Wanderlust 2" class="logo-side"></a>
 
         <div class="clearfix"></div><br />
 
-        <?php require_once('php/inc_newgame.php'); ?>
+        <?php require_once('php/newgame_functions.php'); ?>
 
         <?php
 			echo '<div class="alert alert-success"><strong>Success! </strong>';
@@ -129,7 +129,7 @@
 
         <div class="row">
         	<div class="col-md-12 pagination-centered" style="margin-top:-20px;">
-            	<a href="http://www.development.johndayers.com/wanderlust2/game.php" class="btn btn-success btn-lg"><i class="fa fa-heart"></i> Start Adventure</a>
+            	<a href="game.php" class="btn btn-success btn-lg"><i class="fa fa-heart"></i> Start Adventure</a>
             </div>
         </div>
 
@@ -187,7 +187,7 @@
 
 <?php require_once('inc/footer.inc'); ?>
 
-<script type="text/javascript" src="http://www.development.johndayers.com/wanderlust2/js/sparks.js"></script>
+<script type="text/javascript" src="js/sparks.js"></script>
 
 </body>
 </html>

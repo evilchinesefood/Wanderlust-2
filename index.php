@@ -1,6 +1,6 @@
 <?php require_once('inc/header.inc'); ?>
 
-<script type="text/javascript" src="http://www.development.johndayers.com/wanderlust2/js/front-functions.js"></script>
+<script type="text/javascript" src="js/front-functions.min.js"></script>
 
 <body>
 
@@ -8,7 +8,7 @@
 <div id="wrapper">
 	<div id="wrapper-inner">
 		<p class="version"><?php require_once('inc/version.inc'); ?></p>
-		<a href="http://www.development.johndayers.com/wanderlust2/"><img src="http://www.development.johndayers.com/wanderlust2/img/logos/front-page-logo.png" alt="Wanderlust 2" class="logo"></a>
+		<a href="/wanderlust2/"><img src="img/logos/front-page-logo.png" alt="Wanderlust 2" class="logo"></a>
     <div class="nav">
     <?php
 			if ($_COOKIE['Character'] != NULL) {
@@ -22,7 +22,7 @@
 				echo " ( Level " . $Character[1] . " )";
 		?>
     	<br /><br />
-			<a href="http://www.development.johndayers.com/wanderlust2/game.php" class="btn btn-warning btn-large"><i class="icon-white icon-repeat"></i> Continue Adventure</a></div>
+			<a href="game.php" class="btn btn-warning btn-large"><i class="icon-white icon-repeat"></i> Continue Adventure</a></div>
     	<p style="text-align: center;">or, <a href="#start" role="button" data-toggle="modal">Start a New Adventure!</a></p>
     <?php } else { ?>
     	<br /><br />
@@ -156,7 +156,7 @@
 
 <?php require_once('inc/footer.inc'); ?>
 
-<script type="text/javascript" src="http://www.development.johndayers.com/wanderlust2/js/sparks.js"></script>
+<script type="text/javascript" src="js/sparks.js"></script>
 
 </body>
 </html>
