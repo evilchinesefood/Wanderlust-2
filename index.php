@@ -156,7 +156,7 @@
 
 <?php require_once('inc/footer.inc'); ?>
 
-<script type="text/javascript" src="js/sparks.js"></script>
+<script type="text/javascript" src="js/sparks.min.js"></script>
 
 </body>
 </html>
