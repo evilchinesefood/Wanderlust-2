@@ -1,3 +1,4 @@
+<?php require_once('php/newgame_functions.php'); ?>
 <?php require_once('inc/header.inc'); ?>
 <?php require_once('php/errors_functions.php'); ?>
 
@@ -11,8 +12,6 @@
 		<a href="/wanderlust2/"><img src="img/logos/small-logo.png" alt="Wanderlust 2" class="logo-side"></a>
 
         <div class="clearfix"></div><br />
-
-        <?php require_once('php/newgame_functions.php'); ?>
 
         <?php
 			echo '<div class="alert alert-success"><strong>Success! </strong>';
