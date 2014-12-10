@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-sm-5">
             <label>Character's Name:</label>
             <input id="name" name="name" type="text" class="col-xs-12 form-control" placeholder="Adventurer's Name"><br />
             <span style="font-weight: bold;">Choose your talents:</span><br />
@@ -17,10 +17,11 @@
             <span style="font-weight: bold;">STA</span> <span style="font-size:12px;">(+Health)</span><br />
             <span style="font-weight: bold;">AGI</span> <span style="font-size:12px;">(+Dodge &amp; Crit)</span><br /><br />
             <span>Talent Points: <span id="points" style="font-weight: bold;">10</span></span><br />
+
           </div>
-          <div class="col-xs-7">
+          <div class="col-sm-7">
             <div class="row modal-spacing">
-              <div class="col-sm-2" style="padding-left: 30px;">
+              <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="STR" title="Strength (Melee Damage)"><strong>STR</strong></span>
                 <a onClick="valueup1()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">
@@ -42,7 +43,7 @@
                   <span id="value1">00</span>
                 </div>
               </div>
-              <div class="col-sm-2 col-xs-3" style="padding-left: 30px;">
+              <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="INT" title="Intelect (Magic Damage)"><strong>INT</strong></span>
                 <a onClick="valueup2()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">
@@ -64,7 +65,7 @@
                   <span id="value2">00</span>
                 </div>
               </div>
-              <div class="col-sm-2 col-xs-3" style="padding-left: 30px;">
+              <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="STA" title="Stamina (Health & Health Regen)"><strong>STA</strong></span>
                 <a onClick="valueup3()" class="btn btn-primary btn-up" ><i class="fa fa-plus"></i></a><br />
                 <div class="well">
@@ -86,7 +87,7 @@
                   <span id="value3">00</span>
                 </div>
               </div>
-              <div class="col-sm-2 col-xs-3" style="padding-left: 30px;">
+              <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="AGI" title="Agility (Dodge &amp; Crit Chance)"><strong>AGI</strong></span>
                 <a onClick="valueup4()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">

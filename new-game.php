@@ -17,26 +17,26 @@
 						?>
 
 						<div class="row">
-							<div class="col-md-3" style="margin-top: -3px;">
+							<div class="col-xs-5" style="margin-top: -3px;">
 								<h2 title="Your characters name"><?php echo $name;?>, <?php if ($str > $int && $str > $sta && $str > $agi) { echo "the Brute"; } else if ($int > $str && $int > $sta && $int > $agi) { echo "the Mage"; } else if ($sta > $str && $sta > $int && $sta > $agi) { echo "the Tank"; } else if ($agi > $str && $agi > $int && $agi > $sta) { echo "the Rogue"; } else { echo "the Adventurer"; } ?></h2>
 
-								<p title="Your characters current level">Level: <strong style="font-weight: bold"><?php echo $level;?></strong></p>
+								<p class="ptitle" title="Your characters current level">Level: <strong style="font-weight: bold"><?php echo $level;?></strong></p>
 								<p class="ptitle" title="Your characters expereience to the next level">XP: <strong style="font-weight: bold"><?php echo $xp . ' / ' . $xptonextlevel ;?></strong></p><br />
 								<p class="ptitle" title="Your characters health">HP: <strong style="font-weight: bold; color: #FF0000"><?php echo $hp_left . ' / ' . $hp_full ;?></strong></p>
 								<p class="ptitle" title="Your characters mana">MP: <strong style="font-weight: bold; color: #0000FF"><?php echo $mp_left . ' / ' . $mp_full ;?></strong></p>
 								<p class="ptitle" title="Your characters damage">Melee Damage: <strong style="font-weight: bold"><?php echo $melee_damage ;?></strong></p>
 								<p class="ptitle" title="Your characters magic damage">Magic Damage: <strong style="font-weight: bold"><?php echo $magic_damage ;?></strong></p>
 								<p class="ptitle" title="Your characters damage">Dodge Chance: <strong style="font-weight: bold"><?php echo $dodge ;?>%</strong></p>
-								<p class="ptitle" title="Your characters magic damage">Critical Chance: <strong style="font-weight: bold"><?php echo $critical ;?>%</strong></p><br />
+								<p class="ptitle" title="Your characters magic damage">Critical Chance: <strong style="font-weight: bold"><?php echo $critical ;?>%</strong></p>
 
 								<p class="ptitle" title="How many moves your character has taken">Steps: <strong style="font-weight: bold"><?php echo $steps;?></strong></p>
 								<p class="ptitle" title="How many monsters you have killed">Kills: <strong style="font-weight: bold"><?php echo $kills;?></strong></p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-xs-7">
 								<div class="row">
-									<div class="col-md-1">
+									<div class="col-sm-2 col-xs-2 col-table-spacing">
 										<span id="STR" title="Strength (Melee Damage)"><strong>STR</strong></span>
-										<div class="skill-background">
+										<div class="well">
 											<table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
 												<tr id="1_10"><td>&nbsp;</td></tr>
 												<tr id="1_9"><td>&nbsp;</td></tr>
@@ -50,13 +50,13 @@
 												<tr id="1_1"><td>&nbsp;</td></tr>
 											</table>
 										</div>
-										<div class="skill-star2">
-											<span id="value1" style="font-weight: bold;"><?php if ( $str <= 9 ) { echo '0' . $str; } else { echo $str; }?></span>
+										<div class="skill-star">
+											<span id="value1">00</span>
 										</div>
 									</div>
-									<div class="col-md-1">
-										<span id="INT" title="Intelect (Magic Damage)">INT</span>
-										<div class="skill-background">
+									<div class="col-sm-2 col-xs-2 col-table-spacing">
+										<span id="INT" title="Intelect (Magic Damage)"><strong>INT</strong></span>
+										<div class="well">
 											<table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
 												<tr id="2_10"><td>&nbsp;</td></tr>
 												<tr id="2_9"><td>&nbsp;</td></tr>
@@ -70,13 +70,13 @@
 												<tr id="2_1"><td>&nbsp;</td></tr>
 											</table>
 										</div>
-										<div class="skill-star2">
-											<span id="value2" style="font-weight: bold;"><?php if ( $int <= 9 ) { echo '0' . $int; } else { echo $int; }?></span>
+										<div class="skill-star">
+											<span id="value2">00</span>
 										</div>
 									</div>
-									<div class="col-md-1">
-										<span id="STA" title="Stamina (Health & Health Regen)">STA</span>
-										<div class="skill-background">
+									<div class="col-sm-2 col-xs-2 col-table-spacing">
+										<span id="STA" title="Stamina (Health & Health Regen)"><strong>STA</strong></span>
+										<div class="well">
 											<table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
 												<tr id="3_10"><td>&nbsp;</td></tr>
 												<tr id="3_9"><td>&nbsp;</td></tr>
@@ -90,13 +90,13 @@
 												<tr id="3_1"><td>&nbsp;</td></tr>
 											</table>
 										</div>
-										<div class="skill-star2">
-											<span id="value3" style="font-weight: bold;"><?php if ( $sta <= 9 ) { echo '0' . $sta; } else { echo $sta; }?></span>
+										<div class="skill-star">
+											<span id="value3">00</span>
 										</div>
 									</div>
-									<div class="col-md-1">
-										<span id="AGI" title="Agility (Number of Moves per turn)">AGI</span>
-										<div class="skill-background">
+									<div class="col-sm-2 col-xs-2 col-table-spacing">
+										<span id="AGI" title="Agility (Dodge &amp; Crit Chance)"><strong>AGI</strong></span>
+										<div class="well">
 											<table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
 												<tr id="4_10"><td>&nbsp;</td></tr>
 												<tr id="4_9"><td>&nbsp;</td></tr>
@@ -110,20 +110,17 @@
 												<tr id="4_1"><td>&nbsp;</td></tr>
 											</table>
 										</div>
-										<div class="skill-star2">
-											<span id="value4" style="font-weight: bold;"><?php if ( $agi <= 9 ) { echo '0' . $agi; } else { echo $agi; }?></span>
+										<div class="skill-star">
+											<span id="value4">00</span>
 										</div>
 									</div>
 								</div>
-
-								<br /><br />
-
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="col-md-12 pagination-centered" style="margin-top:-20px;">
-								<a href="game.php" class="btn btn-success btn-lg"><i class="fa fa-heart"></i> Start Adventure</a>
+							<div class="pull-right">
+								<a href="game.php" class="btnpop btnpop-succcess"><i class="fa fa-heart"></i> Start Adventure</a>
 							</div>
 						</div>
 
