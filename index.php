@@ -3,6 +3,7 @@
 <script type="text/javascript" src="js/front-functions.min.js"></script>
 
 <body>
+	<a onclick="animateParchment();">CLICK</a><a onclick="removeAnimateParchment();">CLICK2</a>
 	<div id="wrapper">
 		<div id="wrapper-inner">
 			<p class="version"><?php require_once('inc/version.inc'); ?></p>

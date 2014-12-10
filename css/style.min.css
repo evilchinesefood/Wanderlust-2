@@ -27,17 +27,17 @@ p { font-size: 1em; }
 .startnewgame { display: block; margin: 0 auto; width: 300px; }
 .center-text { text-align: center; }
 
-#parchment { margin: 0 auto; width: 884px; }
-.parchment-left, .parchment-middle, .parchment-right  { background-image: url('../img/ui/parchment.png'); float: left; position: relative; z-index: -5; }
-.parchment-left { background-position: 0 0px; margin-top: 26px; width: 75px; height: 382px; }
-.parchment-right { background-position: -809px 0px; width: 76px; height: 382px; }
-.parchment-middle { background-position: -76px 0px; position: relative; width: 732px; height: 364px; }
+#parchment { margin: 0 auto; position: relative; width: 884px; }
+.parchment-left, .parchment-middle, .parchment-right  { background-image: url('../img/ui/parchment.png'); float: left; position: absolute; top: 0; z-index: 1; }
+.parchment-left { background-position: 0 0px; left: 0; width: 76px; height: 382px; }
+.parchment-right { background-position: -809px 0px; right: 0px; width: 76px; height: 382px; }
+.parchment-middle { background-position: -76px 0px; left: 76px; width: 732px; height: 364px; z-index: 0; }
 .parchment-middle:after { clear: both; }
-.parchment-inner { margin: 10px; font-size: 18px; }
+.parchment-inner { font-size: 18px; margin: 10px; overflow: hidden; position: relative; width: 100%; height: 364px; z-index: 1; }
 
-.animate .parchment-left {-moz-animation:parchleft 1s ease 1;-webkit-animation:parchleft 1s ease 1;-o-animation:parchleft 1s ease 1;-ms-animation:parchleft 1s ease 1;animation:parchleft 1s ease 1;}
-.animate .parchment-middle {-moz-animation:parchmiddle3 1s ease 1;-webkit-animation:parchmiddle3 1s ease 1;-o-animation:parchmiddle3 1s ease 1;-ms-animation:parchmiddle3 1s ease 1;}
-.animate .parchment-right {-moz-animation:parchright 1s ease 1;-webkit-animation:parchright 1s ease 1;-o-animation:parchright 1s ease 1;-ms-animation:parchright 1s ease 1;animation:parchright 1s ease 1;}
+.animate-parchment-left {-moz-animation:parchleft 2s ease 1;-webkit-animation:parchleft 2s ease 1;-o-animation:parchleft 2s ease 1;-ms-animation:parchleft 2s ease 1;animation:parchleft 2s ease 1;}
+.animate-parchment-middle {-moz-animation:parchmiddle 2s ease 1;-webkit-animation:parchmiddle 2s ease 1;-o-animation:parchmiddle 2s ease 1;-ms-animation:parchmiddle 2s ease 1;}
+.animate-parchment-right {-moz-animation:parchright 2s ease 1;-webkit-animation:parchright 2s ease 1;-o-animation:parchright 2s ease 1;-ms-animation:parchright 2s ease 1;animation:parchright 2s ease 1;}
 
 #border { background: url('../img/ui/border.png') no-repeat; width: 980px; height: 420px; position: absolute; left: 50%; margin-left: -490px; margin-top: 115px; z-index: -4; }
 
@@ -46,7 +46,7 @@ p { font-size: 1em; }
 .footer a:Hover { color: #0099FF; }
 
 /* Pop Buttons */
-.btnpop { background-color: #FFFFFF; color: #333333; padding: 7px 15px; position: relative; text-align: center; text-decoration: none; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -moz-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -webkit-transition: all .1s ease; -moz-transition: all .1s ease; -ms-transition: all .1s ease; -o-transition: all .1s ease; transition: all .1s ease; }
+.btnpop { background-color: #FFFFFF; color: #333333; padding: 7px 15px; position: relative; text-align: center; text-decoration: none; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -moz-box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); box-shadow: 0px 9px 0px #CCCCCC, 0px 9px 25px rgba(0,0,0,.7); -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; }
 .btnpop:hover, .btnpop:focus { background-color: #E6E6E6; color: #333333 !important; text-decoration: none !important; -webkit-box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); -moz-box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); box-shadow: 0px 9px 0px #ADADAD, 0px 9px 25px rgba(0,0,0,.7); }
 .btnpop:active { color: #333333; position: relative; top: 6px; -webkit-box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); -moz-box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); box-shadow: 0px 3px 0px #ADADAD, 0px 3px 6px rgba(0,0,0,.9); }
 

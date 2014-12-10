@@ -19,7 +19,7 @@
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/marka.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.min.css" />
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/sprites.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/effects.min.css" />
 
 		<script type="text/javascript" src="vendors\jquery\jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="vendors\twitter-bootstrap\3.1.1\js\bootstrap.min.js"></script>
