@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-xs-5">
             <label>Character's Name:</label>
             <input id="name" name="name" type="text" class="col-xs-12 form-control" placeholder="Adventurer's Name"><br />
             <span style="font-weight: bold;">Choose your talents:</span><br />
@@ -18,9 +18,9 @@
             <span style="font-weight: bold;">AGI</span> <span style="font-size:12px;">(+Dodge &amp; Crit)</span><br /><br />
             <span>Talent Points: <span id="points" style="font-weight: bold;">10</span></span><br />
           </div>
-          <div class="col-sm-7">
+          <div class="col-xs-7">
             <div class="row modal-spacing">
-              <div class="col-sm-2 col-xs-3" style="padding-left: 30px;">
+              <div class="col-sm-2" style="padding-left: 30px;">
                 <span id="STR" title="Strength (Melee Damage)"><strong>STR</strong></span>
                 <a onClick="valueup1()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">

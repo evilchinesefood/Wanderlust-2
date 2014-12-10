@@ -93,12 +93,7 @@ p { font-size: 1em; }
 .skill-background { background-color: #FFFFFF; border-radius: 3px; padding: 10px; }
 .skill-table { margin-left: -10px; }
 .skill-level { background-color: #337AB7; border-radius: 3px; }
-#value1, #value2, #value3, #value4 { margin-left: -1px; padding: 15px; background: url('../img/ui/coin.png') no-repeat; background-size: 40px 43px; background-position: 1px 1px; border: hidden; }
-
-@media (max-width:767px) {
-	.modal-body { padding-left: 25px; }
-	.modal-spacing { margin-top: 20px; }
-}
+#value1, #value2, #value3, #value4 { margin-left: -2px; padding: 15px; background: url('../img/ui/coin.png') no-repeat; background-size: 40px 43px; background-position: 2px 2px; border: hidden; }s
 
 /* Game Board
 -------------------------------------------------- */
