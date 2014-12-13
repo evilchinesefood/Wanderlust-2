@@ -23,7 +23,7 @@
             <div class="row modal-spacing">
               <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="STR" title="Strength (Melee Damage)"><strong>STR</strong></span>
-                <a onClick="valueup1()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
+                <a onClick="valueup(1)" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">
                   <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
                     <tr id="1_10"><td>&nbsp;</td></tr>
@@ -38,14 +38,14 @@
                     <tr id="1_1"><td>&nbsp;</td></tr>
                   </table>
                 </div>
-                <a onClick="valuedown1()" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
+                <a onClick="valuedown(1)" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
                 <div class="skill-star">
-                  <span id="value1">00</span>
+                  <span id="str_value">00</span>
                 </div>
               </div>
               <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="INT" title="Intelect (Magic Damage)"><strong>INT</strong></span>
-                <a onClick="valueup2()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
+                <a onClick="valueup(2)" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">
                   <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
                     <tr id="2_10"><td>&nbsp;</td></tr>
@@ -60,14 +60,14 @@
                     <tr id="2_1"><td>&nbsp;</td></tr>
                   </table>
                 </div>
-                <a onClick="valuedown2()" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
+                <a onClick="valuedown(2)" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
                 <div class="skill-star">
-                  <span id="value2">00</span>
+                  <span id="int_value">00</span>
                 </div>
               </div>
               <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="STA" title="Stamina (Health & Health Regen)"><strong>STA</strong></span>
-                <a onClick="valueup3()" class="btn btn-primary btn-up" ><i class="fa fa-plus"></i></a><br />
+                <a onClick="valueup(3)" class="btn btn-primary btn-up" ><i class="fa fa-plus"></i></a><br />
                 <div class="well">
                   <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
                     <tr id="3_10"><td>&nbsp;</td></tr>
@@ -82,14 +82,14 @@
                     <tr id="3_1"><td>&nbsp;</td></tr>
                   </table>
                 </div>
-                <a onClick="valuedown3()" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
+                <a onClick="valuedown(3)" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
                 <div class="skill-star">
-                  <span id="value3">00</span>
+                  <span id="sta_value">00</span>
                 </div>
               </div>
               <div class="col-sm-2 col-xs-2 col-table-spacing">
                 <span id="AGI" title="Agility (Dodge &amp; Crit Chance)"><strong>AGI</strong></span>
-                <a onClick="valueup4()" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
+                <a onClick="valueup(4)" class="btn btn-primary btn-up"><i class="fa fa-plus"></i></a><br />
                 <div class="well">
                   <table class="skill-table" width="20" border="0" cellspacing="0" cellpadding="0">
                     <tr id="4_10"><td>&nbsp;</td></tr>
@@ -104,9 +104,9 @@
                     <tr id="4_1"><td>&nbsp;</td></tr>
                   </table>
                 </div>
-                <a onClick="valuedown4()" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
+                <a onClick="valuedown(4)" class="btn btn-primary btn-down"><i class="fa fa-minus"></i></a><br />
                 <div class="skill-star">
-                  <span id="value4">00</span>
+                  <span id="agi_value">00</span>
                 </div>
               </div>
             </div>
