@@ -4,14 +4,14 @@
 .spark4 { background: url('../img/effects/sparks.png') no-repeat -102px -2px; width: 36px; height: 13px; }
 .spark5 { background: url('../img/effects/sparks.png') no-repeat -102px -2px; width: 36px; height: 13px; }
 
-@-moz-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; }}
-@-webkit-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; }}
-@-o-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; }}
-@-ms-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; }}
-@-moz-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; }}
-@-webkit-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; }}
-@-o-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; }}
-@-ms-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; }}
+@-moz-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; } }
+@-webkit-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; } }
+@-o-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; } }
+@-ms-keyframes parchleft { 0% { left:0%; } 45% { left:41.5%; } 55% { left:41.5%; } 100% { left:0%; } }
+@-moz-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; } }
+@-webkit-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; } }
+@-o-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; } }
+@-ms-keyframes parchright { 0% {right:0%; } 45% { right:41.5%; } 55% { right:41.5%; } 100% { right:0%; } }
 
 @-moz-keyframes parchmiddle {
   0% { background-position: -76px 0; left: 76px; width: 732px; }

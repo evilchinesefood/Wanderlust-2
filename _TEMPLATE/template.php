@@ -8,16 +8,17 @@
         <div class="parchment-left"></div>
         <div class="parchment-middle">
           <div class="parchment-inner">
-
-          </div>
+          <script>$('.parchment-inner').load('PAGE NAME');</script>
         </div>
-        <div class="parchment-right"></div>
-      </section>
+      </div>
+      <div class="parchment-right"></div>
+    </section>
   </div>
 </div>
 
 <div class="clearfix"></div>
 <?php require_once('inc/footer.inc'); ?>
+<?php require_once('inc/modals.inc'); ?>
 
 </body>
 </html>

@@ -48,4 +48,11 @@
 		exit();
 	}
 
+	function success_newcharacter() {
+		echo '<div class="alert alert-success"><strong>Success! </strong>';
+		echo 'Your Character has been created and now is ready to start adventuring!';
+		echo '</div>';
+		exit();
+	}
+
 ?>
