@@ -31,12 +31,13 @@ p { font-size: 1em; }
 .parchment-left, .parchment-middle, .parchment-right  { background-image: url('../img/ui/parchment.png'); float: left; position: absolute; top: 0; z-index: 1; }
 .parchment-left { background-position: 0 0px; left: 0; width: 76px; height: 382px; }
 .parchment-right { background-position: -809px 0px; right: 0px; width: 76px; height: 382px; }
-.parchment-middle { background-position: -76px 0px; left: 76px; width: 732px; height: 364px; z-index: 0; }
+.parchment-middle { background-position: -76px 0px; left: 76px; overflow: hidden; width: 732px; height: 364px; z-index: 0; }
 .parchment-middle:after { clear: both; }
-.parchment-inner { font-size: 18px; margin: 10px; overflow: hidden; position: relative; width: 100%; height: 364px; z-index: 1; }
+.parchment-inner { font-size: 18px; margin: 10px; overflow: hidden; position: relative; width: 712px; height: 344px; z-index: 1; }
 
 .animate-parchment-left {-moz-animation:parchleft 2s ease 1;-webkit-animation:parchleft 2s ease 1;-o-animation:parchleft 2s ease 1;-ms-animation:parchleft 2s ease 1;animation:parchleft 2s ease 1;}
 .animate-parchment-middle {-moz-animation:parchmiddle 2s ease 1;-webkit-animation:parchmiddle 2s ease 1;-o-animation:parchmiddle 2s ease 1;-ms-animation:parchmiddle 2s ease 1;}
+.animate-parchment-inner {-moz-animation:parchinner 2s ease 1;-webkit-animation:parchinner 2s ease 1;-o-animation:parchinner 2s ease 1;-ms-animation:parchinner 2s ease 1;}
 .animate-parchment-right {-moz-animation:parchright 2s ease 1;-webkit-animation:parchright 2s ease 1;-o-animation:parchright 2s ease 1;-ms-animation:parchright 2s ease 1;animation:parchright 2s ease 1;}
 
 #border { background: url('../img/ui/border.png') no-repeat; width: 980px; height: 420px; position: absolute; left: 50%; margin-left: -490px; margin-top: 115px; z-index: -4; }
