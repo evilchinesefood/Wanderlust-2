@@ -1,5 +1,5 @@
 <?php require_once('../php/newgame_functions.php'); ?>
-<?php require_once('../php/errors_functions.php'); ?>
+<?php require_once('../php/messages_functions.php'); ?>
 
 <?php
   success_newcharacter();
