@@ -10,7 +10,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Wanderlust 2">
 		<meta property="og:description" content="Play Wanderlust 2, an HTML5 RPG deisgned for your browsers!">
-		<!-- ADD NORMALIZE HERE -->
+
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
@@ -24,6 +24,5 @@
 		<script type="text/javascript" src="js/marka.min.js"></script>
 
 		<script type="text/javascript" src="js/general-functions.min.js"></script>
-		<script type="text/javascript" src="js/pages.min.js"></script>
 
 	</head>

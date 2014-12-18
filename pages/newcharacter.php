@@ -1,11 +1,11 @@
 <?php require_once('../php/newgame_functions.php'); ?>
-<?php require_once('../php/messages_functions.php'); ?>
+<?php require_once('../php/message_functions.php'); ?>
 
 <?php
   success_newcharacter();
 ?>
 
-<div class="row">
+<div class="row" style="font-size: 12px;">
   <div class="col-xs-5" style="margin-top: -3px;">
     <h2 title="Your characters name"><?php echo $name;?>, <?php if ($str > $int && $str > $sta && $str > $agi) { echo "the Brute"; } else if ($int > $str && $int > $sta && $int > $agi) { echo "the Mage"; } else if ($sta > $str && $sta > $int && $sta > $agi) { echo "the Tank"; } else if ($agi > $str && $agi > $int && $agi > $sta) { echo "the Rogue"; } else { echo "the Adventurer"; } ?></h2>
 
@@ -40,7 +40,7 @@
           </table>
         </div>
         <div class="skill-star">
-          <span id="value1">00</span>
+          <span id="str_value">00</span>
         </div>
       </div>
       <div class="col-sm-2 col-xs-2 col-table-spacing">
@@ -60,7 +60,7 @@
           </table>
         </div>
         <div class="skill-star">
-          <span id="value2">00</span>
+          <span id="int_value">00</span>
         </div>
       </div>
       <div class="col-sm-2 col-xs-2 col-table-spacing">
@@ -80,7 +80,7 @@
           </table>
         </div>
         <div class="skill-star">
-          <span id="value3">00</span>
+          <span id="sta_value">00</span>
         </div>
       </div>
       <div class="col-sm-2 col-xs-2 col-table-spacing">
@@ -100,7 +100,7 @@
           </table>
         </div>
         <div class="skill-star">
-          <span id="value4">00</span>
+          <span id="agi_value">00</span>
         </div>
       </div>
     </div>

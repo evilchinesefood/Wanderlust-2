@@ -115,7 +115,7 @@
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button onClick="submitcharacter()" class="btn btn-success">Create Character</button>
+        <button id="submitnewcharacterbtn" onClick="submitcharacter()" class="btn btn-success">Create Character</button>
       </div>
     </div>
   </div>

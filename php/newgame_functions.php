@@ -1,5 +1,7 @@
 <?php
 
+	require_once('message_functions.php');
+
 	// Check for the Character Values
 	if (!isset($_GET['name'])) {
 		errors_no_name();
