@@ -11,18 +11,23 @@
 		<meta property="og:site_name" content="Wanderlust 2">
 		<meta property="og:description" content="Play Wanderlust 2, an HTML5 RPG deisgned for your browsers!">
 
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
+		<!--<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />-->
+		<!--<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />-->
+		<!--<link rel="stylesheet" type="text/css" media="screen, projection" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />-->
+
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/animate.min.css" />
 
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/marka.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/effects.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.min.css" />
 
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/marka.min.js"></script>
-
 		<script type="text/javascript" src="js/general-functions.min.js"></script>
-
 	</head>
